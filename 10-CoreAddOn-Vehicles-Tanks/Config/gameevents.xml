@@ -1,0 +1,29 @@
+<config>
+	<append xpath="/gameevents">
+	
+
+		<action_sequence name="action_InVehicle">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+
+			<action class="ModifyCVar">
+				<requirement class="InVehicle"/>			
+				<property name="phase" value="1" />	
+				<property name="cvar" value="InVehicle" />
+				<property name="value" value="1" />
+				<property name="operation" value="set" />
+			</action>
+			<action class="ModifyCVar">
+				<requirement class="InVehicle">
+					<property name="invert" value="true" />
+				</requirement>		
+				<property name="phase" value="1" />	
+				<property name="cvar" value="InVehicle" />
+				<property name="value" value="2" />
+				<property name="operation" value="set" />
+			</action>
+
+		</action_sequence>	
+	
+	</append>
+</config>	

@@ -1,0 +1,21 @@
+<configs>
+
+
+	<!--Silence wheel bounce sounds -->
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']/AudioClip/@ClipName">Sounds/Misc/silencefiller</set>
+	<!--Silence wheel slide sounds -->
+	<set xpath="/Sounds/SoundDataNode[@name='vwheel_slide']/AudioClip/@ClipName">Sounds/Misc/silencefiller</set>
+
+	<append xpath="/Sounds">
+	
+		<SoundDataNode name="Tank1"> 
+			<AudioSource name="Sounds/AudioSource_SmallHorn"/>
+			<AudioClip ClipName="#@modfolder:Resources/AOO_Tank.unity3d?C4_Explosion"/>
+			<maxVoicesPerEntity value="1"/>
+			<MaxVoices value="10"/> 
+			<MaxRepeatRate value="0.01"/>
+		</SoundDataNode>
+		
+	</append>	
+	
+</configs>		

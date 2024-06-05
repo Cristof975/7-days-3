@@ -1,0 +1,64 @@
+<config>
+	<append xpath="/items">
+
+			<item name="ammoRocketParticle">
+				<property name="Tags" value="ammo,perkDemolitionsExpert"/>
+			<property name="CustomIcon" value="ammoRocketFrag"/>					
+				<property name="DisplayType" value="ammoLauncher"/>
+				<property name="DescriptionKey" value="ammoAPCRocketDesc"/>
+				<property name="Meshfile" value="Items/Misc/sackPrefab.prefab"/>
+				<property name="HoldType" value="45"/>
+				<property name="HandMeshfile" value="Items/Misc/sackPrefab.prefab"/>
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Material" value="Morganic"/>
+				<property name="Stacknumber" value="500"/>
+				<property name="EconomicValue" value="20"/>
+				<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+
+				<property class="Action1">
+					<property name="Class" value="Projectile"/>
+					<property name="Explosion.ParticleIndex" value="#@modfolder:Resources/AOO_Tank.unity3d?Explosion9$ammoRocketParticle"/>
+					<property name="Explosion.Duration" value="10"/>
+					<property name="Explosion.AudioName" value=""/>
+					<property name="Explosion.AudioDuration" value="3.5"/>
+					<property name="Explosion.SyncOnConnect" value="true"/>
+					<property name="Explosion.RadiusBlocks" value="6"/>
+					<property name="Explosion.RadiusEntities" value="10"/>
+					<property name="Explosion.BlockDamage" value="800"/>
+					<property name="Explosion.BlastPower" value="75"/>
+					<property name="Gravity" value="-1"/>
+					<property name="FlyTime" value="1"/>
+					<property name="LifeTime" value="20"/>
+				</property>
+				<effect_group name="ammoAPCRocketFrag" tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="800" tags="perkDemolitionsExpert"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="500" tags="perkDemolitionsExpert"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkDemolitionsExpert"/>
+				<display_value name="dExRadius" value="10"/>
+				</effect_group>
+			</item>		
+
+
+
+
+		<item name="vehicleTank01Placeable">
+			<property name="CustomIcon" value="Tank"/>		
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat"/>
+			<property name="Meshfile" value="#@modfolder:Resources/AOO_Tank.unity3d?Tank"/>
+			<property name="EconomicValue" value="1"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleTank01"/>
+				<property name="VehicleSize" value="2, 2, 5"/>
+			</property>
+			<effect_group name="vehicleBattle01Placeable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="60000"/>
+			</effect_group>
+		</item>	
+		
+
+		
+	</append>
+</config>

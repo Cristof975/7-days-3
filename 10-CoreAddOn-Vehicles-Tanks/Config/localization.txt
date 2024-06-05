@@ -1,0 +1,6 @@
+Key,Source,Context,Changes,English
+
+
+vehicleTank01,entity,Entity,,"T-34 Tank"
+vehicleTank01Placeable,entity,Entity,,"T-34 Tank"
+ammoRocketParticle,item,Item,,"T-34 Ammo"

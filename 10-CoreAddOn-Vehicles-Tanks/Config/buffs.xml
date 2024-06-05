@@ -1,0 +1,40 @@
+<configs>
+	<append xpath="/buffs">
+
+		<buff name="buffTank" hidden="true"> 
+			<stack_type value="replace"/>
+			<duration value="2"/>			
+			<damage_type value="heat"/>	
+				<effect_group> 
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="TankMeshStatic"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" transform_path="TankMesh"/>	
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" transform_path="Brake"/>					
+			</effect_group>
+			<effect_group> 
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" transform_path="TankMeshStatic"/>	
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="false" transform_path="TankMesh"/>	
+				<triggered_effect trigger="onSelfBuffRemove" action="SetTransformActive" active="true" transform_path="Brake"/>					
+			</effect_group>
+		</buff>
+
+
+
+		<buff name="buffTankPlayer" hidden="true">
+			<stack_type value="replace"/>
+			<update_rate value=".5"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="action_InVehicle" >
+				</triggered_effect>				
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffTank" target="selfAOE" range="1"> 			
+					<requirement name="CVarCompare" cvar="InVehicle" operation="Equals" value="1"/>				
+				</triggered_effect>				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="1" cvar="InTank" operation="set" value="1"> 			
+					<requirement name="CVarCompare" cvar="InVehicle" operation="Equals" value=".2"/>				
+				</triggered_effect>			
+			
+
+			</effect_group>
+		</buff>	
+		
+	</append>
+</configs>		
