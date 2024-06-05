@@ -1,0 +1,43 @@
+<configs>
+	
+	<append xpath="/recipes">
+		
+		<recipe name="vehicleBenzActrosplaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="Benz Actros Body" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleBenzActrosplaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleBenzActrosTrailerplaceable" count="1"/>
+		</recipe>
+
+		<recipe name="vehicleBenzActrosTrailerplaceable" count="1" craft_time="210" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="vehicleBenzActrosplaceable" count="1"/>
+			<ingredient name="Benz Actros Trailer" count="1"/>
+		</recipe>
+
+		<recipe name="Benz Actros Body" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="500"/>
+			<ingredient name="resourceMechanicalParts" count="100"/>
+			<ingredient name="resourceDuctTape" count="25"/>
+			<ingredient name="resourceLeather" count="60"/>
+			<ingredient name="resourceElectricParts" count="60"/>
+			
+		</recipe>
+
+		<recipe name="Benz Actros Trailer" count="1" craft_time="210" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceDuctTape" count="15"/>
+			<ingredient name="resourceLeather" count="15"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			
+		</recipe>
+
+
+		
+		
+	</append>
+</configs>

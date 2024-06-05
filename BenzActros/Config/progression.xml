@@ -1,0 +1,9 @@
+<configs>
+	
+
+	<append xpath="//crafting_skill[@name='craftingVehicles']/display_entry[@icon='vehicle4x4TruckPlaceable']/unlock_entry/@item">,Benz Actros Body,Benz Actros Trailer</append>
+	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="Benz Actros Body,Benz Actros Trailer"/>
+	</append>
+	
+</configs>
