@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="Craftable_solar" />
+		<DisplayName value="Craftable Solar"/>
+		<Version value="1.0" />
+		<Description value="Makes solar banks and solar cells craftable"  />
+
+</xml>
+

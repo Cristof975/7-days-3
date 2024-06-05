@@ -1,0 +1,6 @@
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\bin\Debug\CustomPlayerActionManager.dll
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\bin\Debug\CustomPlayerActionManager.pdb
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\obj\Debug\CustomPlayerActionManager.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\obj\Debug\CustomPlayerActionManager.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\obj\Debug\CustomPlayerActionManager.dll
+E:\SteamLibrary\steamapps\common\7 Days To Die\Mods\CustomPlayerActionManager\obj\Debug\CustomPlayerActionManager.pdb

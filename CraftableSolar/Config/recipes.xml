@@ -1,0 +1,17 @@
+<configs>
+    <append xpath="/recipes">
+        <recipe name="solarbank" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+	        <ingredient name="resourceForgedIron" count="20"/>
+	        <ingredient name="resourceScrapBrass" count="10"/>
+	        <ingredient name="resourceScrapPolymers" count="20"/>
+	        <ingredient name="glassBlockVariantHelper" count="2"/>
+        </recipe>
+		
+    <recipe name="solarCell" count="1" craft_time="30" craft_area="workbench" tags="perkAdvancedEngineering,workbenchCrafting">
+		<ingredient name="resourceScrapBrass" count="15"/>
+		<ingredient name="glassBlockVariantHelper" count="1"/>
+		<ingredient name="resourceScrapPolymers" count="10"/>
+	</recipe>
+	
+	</append>
+</configs>
