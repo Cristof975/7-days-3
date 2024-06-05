@@ -1,0 +1,7 @@
+<config>
+	<append xpath="/buffs">
+		<buff name="buffMinigunAnimator" hidden="true">
+			<stack_type value="replace"/>
+		</buff>
+	</append>
+</config>

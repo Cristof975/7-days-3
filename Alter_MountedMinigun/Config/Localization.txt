@@ -1,0 +1,9 @@
+Key,English
+manualMinigun,XM214 Microgun
+ammo556M193,M193 5.56×45mm Ammo
+ammo556M193Desc,Ammunition used by the XM214 Microgun.
+ammoBundleammo556M193,Box of M193 5.56×45mm (100)
+ammoBundleammo556M193Desc,Ammunition used by the XM214 Microgun (100).
+manualMinigunDesc,"A powerful manually controlled turret. Requires electric power and uses M193 5.56×45mm Ammo. It will overheat after a few seconds of continuous fire and will degrade with each shot. Repair it before it breaks or you will loss all the ammo inside."
+ttNotPowered,"This device requires power to work."
+useMinigun,"Use Turret"

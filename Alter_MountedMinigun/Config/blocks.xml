@@ -1,0 +1,58 @@
+﻿<configs>
+	<append xpath="/blocks">
+		<block name="manualMinigunDestroyed">
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Model" value="#@modfolder:Resources/resources.unity3d?mountedMinigunDestroyedPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="manualMinigun"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="20"/>
+				<property name="UpgradeHitCount" value="5"/>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="6"/>
+			</property>
+		</block>
+		<block name="manualMinigun">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="ManualTurret, MountedMinigun"/>
+			<property name="AmmoItem" value="ammo556M193"/>
+			<property name="MaxDamage" value="3000"/>
+			<property name="MaxDistance" value="50"/>
+			<property name="EntityDamage" value="120"/>
+			<property name="BlockDamage" value="10"/>
+			<property name="RaySpread" value="3"/>
+			<property name="BurstFireRate" value="0.04"/>
+			<property name="MinigunBurstFireTime" value="10"/>
+			<property name="MinigunCooldownTime" value="5"/>
+			<property name="YawRange" value="130"/>
+			<property name="PitchRange" value="70"/>
+			<property name="ParticlesMuzzleFire" value="gunfire_m60"/>
+			<property name="OverheatSound" value="minigun_overheat"/>
+			<property name="WakeUpSound" value="turret_windup"/>
+			<property name="FireSound" value="m60_fire"/>
+			<property name="IgnoreKeystoneOverlay" value="true"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/resources.unity3d?mountedMinigunPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="DowngradeBlock" value="manualMinigunDestroyed"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="6"/>
+			</property>
+			<property name="BurstRoundCount" value="99999"/>
+			<property name="CooldownTime" value="0"/>
+			<property name="RequiredPower" value="10"/>
+		</block>
+	</append>
+</configs>
