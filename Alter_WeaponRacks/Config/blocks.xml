@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="weaponRackPlayer">
+			<property name="Material" value="Mwood"/>
+			<property name="Class" value="WeaponRack, WeaponRacks"/>
+			<property name="DescriptionKey" value="weaponRackPlayerDesc"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="Model" value="#@modfolder:Resources/resources2.unity3d?WeaponRackPrefab"/>
+			<property name="LootList" value="WeaponRackPlayer"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="ModelOffset" value="0,.5,0"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+		</block>
+		<block name="weaponRackGreyPlayer">
+			<property name="Extends" value="weaponRackPlayer"/>
+			<property name="DescriptionKey" value="weaponRackPlayerDesc"/>
+			<property name="Model" value="#@modfolder:Resources/resources2.unity3d?WeaponRackGreyPrefab"/>
+		</block>
+		<block name="weaponRackPlayerHelper">
+			<property name="Extends" value="weaponRackPlayer"/>
+			<property name="CustomIcon" value="weaponRackPlayer"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="weaponRackPlayerDesc"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="weaponRackPlayer,weaponRackGreyPlayer"/>
+		</block>
+	</append>
+</configs>
